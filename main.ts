@@ -4,7 +4,7 @@
 
 import * as types from "./llmFile.d.ts"
 
-export default async function importLLMFile(modulePath: string): types.information | null {
+export default async function importLLMFile(modulePath: string): Promise<types.information | null> {
   try {
     if (!globalThis.availableLLMs) {
       globalThis.availableLLMs = {}
