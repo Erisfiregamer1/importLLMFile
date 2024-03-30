@@ -1,4 +1,4 @@
-// This module is available on JSR as @erisws/importLLMFile
+// This module is available on JSR as @erisws/importllmfile
 
 // Automatically imports an LLM File to the global object (availableLLMs) and gives you information about it so you don't have to waste time writing an implementation.
 
