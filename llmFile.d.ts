@@ -93,11 +93,10 @@ export type llmFile = {
     send: (prompt: string, messages: Message[], callback?: ((information: callbackData, complete: boolean) => void) | null, requirements?: Requirements) => Promise<Response>
 }
 
-// JSR doesn't allow global types, you might want to copy this to your types if you use the module.
-/*declare global {
+declare global {
   // deno-lint-ignore no-var
   var availableLLMs: 
       {
           [id: string]: llmFile;
         }
-}*/
+}
